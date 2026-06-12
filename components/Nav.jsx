@@ -11,7 +11,7 @@ export default function Nav() {
     <nav className="sticky top-0 z-20 border-b border-white/[.06] bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2.5 font-[family-name:var(--font-poppins)] text-lg font-extrabold tracking-[.3em]">
-          <span className="grid h-9 w-9 place-items-center rounded-lg grad-bg tracking-normal">N</span>
+          <img src="/logo.png" alt="NOVU" className="h-9 w-9 rounded-lg" />
           NOVU
         </Link>
         <div className="hidden gap-7 md:flex">

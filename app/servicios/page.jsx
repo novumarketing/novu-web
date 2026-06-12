@@ -6,7 +6,7 @@ const servicios = [
   ["📱", "Gestión de redes sociales", "Nos volvemos tu equipo de redes: estrategia mensual, calendario de contenido, publicación, respuesta a comentarios y mensajes. Tu marca activa todos los días, sin que tú pierdas tiempo.", "El servicio ancla del plan mensual"],
   ["🎬", "Creación de contenido", "Reels que la gente sí ve, diseño gráfico alineado a tu marca, textos que venden y sesiones de foto/video. Todo pensado para convertir, no solo para verse bonito.", "Lo que diferencia a NOVU visualmente"],
   ["🎯", "Publicidad pagada", "Campañas en Meta Ads y Google Ads con segmentación fina, creativos probados y optimización semanal. Cada peso invertido se rastrea hasta el resultado.", "El acelerador de resultados"],
-  ["🌐", "Branding y sitios web", "Identidad visual completa, landing pages y sitios institucionales con dominio, hosting seguro y mantenimiento. Como el que hicimos para AMEFF.", "Proyectos puntuales, desde $3,500 MXN"],
+  ["🌐", "Branding y sitios web", "Identidad visual completa, landing pages y sitios institucionales con dominio, hosting seguro y mantenimiento. Como el que hicimos para AMEFF.", "Proyectos puntuales con cotización a la medida"],
 ];
 
 const planes = [
@@ -56,7 +56,7 @@ export default function Servicios() {
             </div>
           ))}
         </div>
-        <p className="mt-8 text-sm italic text-muted">Sitios web y proyectos de branding se cotizan por separado, desde $3,500 MXN. Precios sin IVA.</p>
+        <p className="mt-8 text-sm italic text-muted">Sitios web y proyectos de branding se cotizan por separado, a la medida de cada proyecto. Precios sin IVA.</p>
       </Section>
     </main>
   );

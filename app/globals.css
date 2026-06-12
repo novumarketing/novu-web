@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0A0A12;
+  --color-card: #15151F;
+  --color-card2: #1C1C2E;
+  --color-blue: #2D9CFD;
+  --color-purple: #A833F5;
+  --color-magenta: #C939F0;
+  --color-muted: #9AA0B5;
+  --font-display: var(--font-poppins);
+  --font-body: var(--font-inter);
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-bg); color: #fff; font-family: var(--font-body), sans-serif; }
+
+.grad-text {
+  background: linear-gradient(100deg, var(--color-blue), var(--color-purple));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.grad-bg { background: linear-gradient(100deg, var(--color-blue), var(--color-purple)); }
+
+.blob { position: absolute; border-radius: 50%; filter: blur(110px); opacity: .32; pointer-events: none; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+.fade-up { animation: fadeUp .7s ease both; }
+.fade-up-1 { animation: fadeUp .7s ease .12s both; }
+.fade-up-2 { animation: fadeUp .7s ease .24s both; }
+.fade-up-3 { animation: fadeUp .7s ease .36s both; }
+
+.card-hover { transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.card-hover:hover { transform: translateY(-4px); border-color: #2D9CFD55; box-shadow: 0 14px 40px rgba(45,156,253,.10); }
+
+.grad-border { position: relative; background: var(--color-card2); border-radius: 18px; }
+.grad-border::before {
+  content: ""; position: absolute; inset: 0; border-radius: 18px; padding: 1.5px;
+  background: linear-gradient(120deg, var(--color-blue), var(--color-magenta));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+}

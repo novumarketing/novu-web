@@ -3,8 +3,6 @@ import { Button, Section, Card, WA } from "@/components/ui";
 export const metadata = {
   title: "Servicios y paquetes — NOVU Marketing",
   description: "Cuatro servicios — redes sociales, contenido, publicidad pagada y sitios web — y planes mensuales desde $7,000 MXN. Elige el nivel que tu negocio necesita y escala cuando estés listo.",
-  openGraph: { description: "Servicios y planes mensuales desde $7,000 MXN: redes, contenido, ads y sitios web. Sin plazos forzosos." },
-  twitter: { description: "Servicios y planes mensuales desde $7,000 MXN: redes, contenido, ads y sitios web." },
 };
 
 const servicios = [

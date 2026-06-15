@@ -19,7 +19,7 @@ body { background: var(--color-bg); color: #fff; font-family: var(--font-body), 
   background: linear-gradient(100deg, var(--color-blue), var(--color-purple));
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.grad-bg { background: linear-gradient(100deg, var(--color-blue), var(--color-purple)); }
+.grad-bg { background: linear-gradient(100deg, #1A73D1, #9B2BE0); }
 
 .blob { position: absolute; border-radius: 50%; filter: blur(110px); opacity: .32; pointer-events: none; }
 
@@ -39,3 +39,5 @@ body { background: var(--color-bg); color: #fff; font-family: var(--font-body), 
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
 }
+
+:focus-visible { outline: 2px solid var(--color-blue); outline-offset: 3px; border-radius: 6px; }

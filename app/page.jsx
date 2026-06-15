@@ -41,7 +41,7 @@ export default function Home() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {servicios.map(([icon, t, d]) => (
             <Card key={t}>
-              <div className="grid h-12 w-12 place-items-center rounded-full grad-bg text-xl">{icon}</div>
+              <div aria-hidden="true" className="grid h-12 w-12 place-items-center rounded-full grad-bg text-xl">{icon}</div>
               <h3 className="mt-5 font-[family-name:var(--font-poppins)] font-semibold">{t}</h3>
               <p className="mt-2 text-sm text-muted">{d}</p>
             </Card>

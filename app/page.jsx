@@ -5,7 +5,7 @@ const servicios = [
   ["📱", "Gestión de redes sociales", "Estrategia, calendario, publicación y community management en Instagram, TikTok y Facebook."],
   ["🎬", "Creación de contenido", "Reels, diseño gráfico, copywriting y sesiones de foto y video orientadas a conversión."],
   ["🎯", "Publicidad pagada", "Campañas en Meta Ads y Google Ads: segmentación, creativos y optimización semanal."],
-  ["🌐", "Branding y sitios web", "Identidad visual, landing pages y sitios institucionales que captan y convierten."],
+  ["🌐", "Desarrollo Web Premium", "No usamos plantillas. Programamos software a medida en Next.js: carga en milisegundos, SEO Local avanzado y arquitectura pensada 100% en conversión."],
 ];
 
 const pasos = [
@@ -24,13 +24,13 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6">
           <div className="fade-up text-xs font-semibold uppercase tracking-[.3em] text-blue">Agencia de marketing digital</div>
           <h1 className="fade-up-1 mt-5 font-[family-name:var(--font-poppins)] text-4xl font-extrabold leading-tight md:text-6xl">
-            Hacemos visibles a las marcas que <span className="grad-text">merecen crecer</span>
+            Ecosistemas digitales de alto rendimiento para <span className="grad-text">especialistas de la salud y colegios</span>
           </h1>
           <p className="fade-up-2 mx-auto mt-6 max-w-xl text-lg text-muted">
-            Estrategia, contenido creativo y datos para convertir tu presencia digital en ventas reales. Sin jerga, sin humo: resultados medibles cada mes.
+            Estrategia, desarrollo a medida y adquisición de clientes. Construimos infraestructura digital rápida y optimizada que convierte visitas en pacientes y alumnos.
           </p>
           <div className="fade-up-3 mt-9 flex flex-wrap justify-center gap-4">
-            <Button href={WA} external>Pide tu auditoría gratuita</Button>
+            <Button href={WA} external>Agendar Diagnóstico de Conversión</Button>
             <Button href="/servicios" ghost>Ver servicios</Button>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {servicios.map(([icon, t, d]) => (
             <Card key={t}>
-              <div aria-hidden="true" className="grid h-12 w-12 place-items-center rounded-full grad-bg text-xl">{icon}</div>
+              <div className="grid h-12 w-12 place-items-center rounded-full grad-bg text-xl">{icon}</div>
               <h3 className="mt-5 font-[family-name:var(--font-poppins)] font-semibold">{t}</h3>
               <p className="mt-2 text-sm text-muted">{d}</p>
             </Card>
@@ -53,15 +53,24 @@ export default function Home() {
       </Section>
 
       <Section kicker="Casos de éxito" title="Trabajo" accent="real, en línea" sub="Lo que decimos, lo demostramos." className="pt-0">
-        <div className="grad-border p-10 md:flex md:items-center md:gap-10">
-          <div className="grid place-items-center rounded-xl bg-bg p-10 md:w-1/3">
-            <div className="font-[family-name:var(--font-poppins)] text-2xl font-extrabold tracking-[.2em]">AMEFF</div>
-            <div className="mt-2 text-xs tracking-[.18em] text-muted">SITIO WEB INSTITUCIONAL</div>
-          </div>
-          <div className="mt-8 md:mt-0 md:flex-1">
-            <h3 className="font-[family-name:var(--font-poppins)] text-xl font-semibold">AMEFF — Asociación Mundial de Eventos y Festivales Folklóricos</h3>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="grad-border p-8">
+            <div className="grid place-items-center rounded-xl bg-bg p-10 text-center">
+              <div className="font-[family-name:var(--font-poppins)] text-2xl font-extrabold tracking-[.2em]">AMEFF</div>
+              <div className="mt-2 text-xs tracking-[.18em] text-muted">SITIO WEB INSTITUCIONAL</div>
+            </div>
+            <h3 className="mt-6 font-[family-name:var(--font-poppins)] text-xl font-semibold">AMEFF — Asociación Mundial de Eventos y Festivales Folklóricos</h3>
             <p className="mt-3 text-muted">Sitio institucional con dominio propio, hosting seguro y mantenimiento mensual a cargo de NOVU.</p>
             <Link href="/casos" className="mt-4 inline-block font-semibold text-blue hover:underline">Conocer el caso →</Link>
+          </div>
+          <div className="grad-border p-8">
+            <div className="grid place-items-center rounded-xl bg-bg p-10 text-center">
+              <div className="font-[family-name:var(--font-poppins)] text-2xl font-extrabold tracking-[.2em]">SE</div>
+              <div className="mt-2 text-xs tracking-[.18em] text-muted">ESPECIALISTA DE LA SALUD</div>
+            </div>
+            <h3 className="mt-6 font-[family-name:var(--font-poppins)] text-xl font-semibold">Psic. Sebastián Escorza — Psicoterapia ACT</h3>
+            <p className="mt-3 text-muted">Landing page de alta conversión desarrollada en Next.js. Optimización de LCP, integración de Schema Markup para SEO Local y experiencia mobile-first.</p>
+            <a href="https://sebastian-psicologia.vercel.app/" target="_blank" rel="noopener" className="mt-4 inline-block font-semibold text-blue hover:underline">Ver proyecto →</a>
           </div>
         </div>
       </Section>
@@ -82,12 +91,12 @@ export default function Home() {
         <div className="relative overflow-hidden rounded-3xl border border-white/[.06] bg-card px-8 py-16 text-center">
           <div className="blob left-[-100px] top-[-120px] h-[300px] w-[300px] bg-blue opacity-20" />
           <h2 className="font-[family-name:var(--font-poppins)] text-3xl font-bold md:text-4xl">
-            El siguiente paso es <span className="grad-text">empezar.</span>
+            El siguiente paso para <span className="grad-text">escalar.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-muted">
-            Pide tu auditoría digital gratuita — en 20 minutos te decimos exactamente qué mejorar para vender más.
+            Agenda tu diagnóstico de conversión. En 20 minutos analizaremos tu infraestructura actual y trazaremos el plan exacto para aumentar tu captación de clientes.
           </p>
-          <div className="mt-8"><Button href={WA} external>Escríbenos por WhatsApp</Button></div>
+          <div className="mt-8"><Button href={WA} external>Agendar Diagnóstico de Conversión</Button></div>
         </div>
       </Section>
     </main>

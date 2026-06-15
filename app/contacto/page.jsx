@@ -3,8 +3,6 @@ import { Button, Section, Card, WA } from "@/components/ui";
 export const metadata = {
   title: "Contacto — NOVU Marketing",
   description: "Pide tu auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día, sin compromiso. Resolvemos tus dudas antes de empezar.",
-  openGraph: { description: "Pide tu auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día, sin compromiso." },
-  twitter: { description: "Auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día." },
 };
 
 const faqs = [

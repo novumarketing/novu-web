@@ -3,7 +3,7 @@ import { WA } from "./ui";
 export default function WhatsApp() {
   return (
     <a
-      href={WA} target="_blank" rel="noopener" aria-label="WhatsApp"
+      href={WA} target="_blank" rel="noopener" aria-label="Agendar diagnóstico de conversión por WhatsApp"
       className="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] shadow-[0_8px_24px_rgba(0,0,0,.45)] transition hover:scale-110"
     >
       <svg viewBox="0 0 24 24" className="h-8 w-8 fill-white" xmlns="http://www.w3.org/2000/svg">

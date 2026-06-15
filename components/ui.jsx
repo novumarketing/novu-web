@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const WA = "https://wa.me/527751238085?text=Hola%2C%20quiero%20mi%20auditor%C3%ADa%20gratuita";
+export const WA = "https://wa.me/527751238085?text=Hola%2C%20me%20interesa%20agendar%20un%20diagn%C3%B3stico%20de%20conversi%C3%B3n%20para%20mi%20negocio.";
 
 export function Button({ href, children, ghost = false, external = false }) {
   const cls = ghost

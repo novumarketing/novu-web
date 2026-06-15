@@ -1,6 +1,11 @@
 import { Button, Section, Card, WA } from "@/components/ui";
 
-export const metadata = { title: "Servicios y paquetes — NOVU Marketing" };
+export const metadata = {
+  title: "Servicios y paquetes — NOVU Marketing",
+  description: "Cuatro servicios — redes sociales, contenido, publicidad pagada y sitios web — y planes mensuales desde $7,000 MXN. Elige el nivel que tu negocio necesita y escala cuando estés listo.",
+  openGraph: { description: "Servicios y planes mensuales desde $7,000 MXN: redes, contenido, ads y sitios web. Sin plazos forzosos." },
+  twitter: { description: "Servicios y planes mensuales desde $7,000 MXN: redes, contenido, ads y sitios web." },
+};
 
 const servicios = [
   ["📱", "Gestión de redes sociales", "Nos volvemos tu equipo de redes: estrategia mensual, calendario de contenido, publicación, respuesta a comentarios y mensajes. Tu marca activa todos los días, sin que tú pierdas tiempo.", "El servicio ancla del plan mensual"],
@@ -24,7 +29,7 @@ export default function Servicios() {
           {servicios.map(([icon, t, d, foot]) => (
             <Card key={t}>
               <div className="flex items-start gap-5">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full grad-bg text-xl">{icon}</div>
+                <div aria-hidden="true" className="grid h-12 w-12 shrink-0 place-items-center rounded-full grad-bg text-xl">{icon}</div>
                 <div>
                   <h3 className="font-[family-name:var(--font-poppins)] text-lg font-semibold">{t}</h3>
                   <p className="mt-2 text-sm text-muted">{d}</p>

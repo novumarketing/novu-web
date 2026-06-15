@@ -1,6 +1,11 @@
 import { Button, Section, Card, WA } from "@/components/ui";
 
-export const metadata = { title: "Contacto — NOVU Marketing" };
+export const metadata = {
+  title: "Contacto — NOVU Marketing",
+  description: "Pide tu auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día, sin compromiso. Resolvemos tus dudas antes de empezar.",
+  openGraph: { description: "Pide tu auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día, sin compromiso." },
+  twitter: { description: "Auditoría digital gratuita de 20 minutos por WhatsApp. Respuesta el mismo día." },
+};
 
 const faqs = [
   ["¿Qué incluye la auditoría gratuita?", "Revisamos tus redes y presencia digital en 20 minutos y te entregamos 3 mejoras accionables, con o sin contrato. Sin compromiso."],
@@ -16,13 +21,13 @@ export default function Contacto() {
         sub="Pide tu auditoría digital gratuita — en 20 minutos te decimos exactamente qué mejorar para vender más.">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="grad-border p-9 text-center">
-            <div className="text-4xl">💬</div>
+            <div className="text-4xl" aria-hidden="true">💬</div>
             <h3 className="mt-4 font-[family-name:var(--font-poppins)] text-lg font-semibold">WhatsApp (recomendado)</h3>
             <p className="mt-2 text-sm text-muted">Respuesta el mismo día, de lunes a sábado.</p>
             <div className="mt-6"><Button href={WA} external>Escríbenos ahora</Button></div>
           </div>
           <Card className="p-9 text-center">
-            <div className="text-4xl">✉️</div>
+            <div className="text-4xl" aria-hidden="true">✉️</div>
             <h3 className="mt-4 font-[family-name:var(--font-poppins)] text-lg font-semibold">Correo</h3>
             <p className="mt-2 text-sm text-muted">Para propuestas formales y facturación.</p>
             <a href="mailto:novumarketing03@gmail.com" className="mt-6 inline-block font-semibold text-blue hover:underline">

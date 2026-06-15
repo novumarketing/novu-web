@@ -3,8 +3,6 @@ import { Button, Section, WA } from "@/components/ui";
 export const metadata = {
   title: "Casos de éxito — NOVU Marketing",
   description: "Casos reales de NOVU: sitios web y marketing que generan resultados, como el sitio institucional de AMEFF.",
-  openGraph: { description: "Casos reales de NOVU: sitios web y marketing con resultados, como el sitio institucional de AMEFF." },
-  twitter: { description: "Casos reales de NOVU, como el sitio institucional de AMEFF." },
 };
 
 export default function Casos() {

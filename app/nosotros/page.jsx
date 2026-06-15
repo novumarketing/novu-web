@@ -1,6 +1,11 @@
 import { Button, Section, Card, WA } from "@/components/ui";
 
-export const metadata = { title: "Nosotros — NOVU Marketing" };
+export const metadata = {
+  title: "Nosotros — NOVU Marketing",
+  description: "Conoce a NOVU y a Mauricio Flores: marketing de boutique para negocios locales, con trato directo, reportes claros y resultados medibles.",
+  openGraph: { description: "NOVU es marketing de boutique: trato directo con el fundador, reportes claros y foco en resultados de negocio." },
+  twitter: { description: "NOVU: marketing de boutique con trato directo y resultados medibles." },
+};
 
 const valores = [
   ["Resultados, no likes", "Cada acción se mide contra un objetivo de negocio: leads, ventas, reservas."],
